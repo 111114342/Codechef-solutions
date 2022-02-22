@@ -1,0 +1,11 @@
+/** Complete The Credits  **/
+
+a=int(input())
+for i in range(a):
+    k=int(input())
+    if(k>65):
+        print("Overload")
+    elif(k<35):
+        print("Underload")
+    else:
+        print("Normal")

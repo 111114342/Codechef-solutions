@@ -1,0 +1,24 @@
+/** XxOoRr **/
+
+
+n=int(input())
+for i in range(n):
+    t,k=map(int,input().split())
+    arr=list(map(int,input().split()))
+    sum1=[0]*33
+    for i in range(0,t):
+        x=arr[i]
+        j=32
+        while(x>0):
+           sum1[j]=sum1[j]+x%2
+           j=j-1
+           x=x//2
+    c=0
+    for j in range(33):
+        if sum1[j]%k==0:
+            c=c+sum1[j]//k
+        else:
+            c=c+(sum1[j]//k)+1
+    print(c)
+        
+        

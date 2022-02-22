@@ -1,0 +1,9 @@
+/** Maximum Production **/
+
+n=int(input())
+for i in range(n):
+    d,x,y,z=map(int,input().split())
+    k1=x*7
+    k2=y*d+z*(7-d)
+    maxi=max(k1,k2)
+    print(maxi)

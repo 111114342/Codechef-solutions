@@ -1,0 +1,11 @@
+
+/* Peaceful party */
+
+
+n=int(input())
+for i in range(n):
+    pA,pB,pC=map(int,input().split(" "))
+    if(pA+pC>pB):
+        print(pA+pC)
+    else:
+        print(pB)

@@ -1,0 +1,7 @@
+/** Guess the bottom Face **/
+
+a=int(input())
+for i in range(a):
+    b=int(input())
+    k=7-b
+    print(k)
